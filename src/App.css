@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+.app-container {
+    border: 1px solid darkgrey;
+    inset: 35px;
+    position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dev-container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+    height: 100%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+    color: whitesmoke;
+    padding-right: 30px;
+    align-self: flex-end;
+    text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    font-size: xxx-large;
+    padding-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-title {
+    padding-top: 0;
+    padding-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 25px;
+    margin-left: 30px;
+    width: 60%;
+    max-height: 40%;
+    overflow: scroll;
 }
+
+.about {
+    width: 40%;
+}
+
+.expertise-langs {
+    width: 20%;
+    overflow: scroll;
+    align-self: flex-end;
+    margin-right:12px;
+}
+
+.expertise-sub-section {
+}
+
+

@@ -1,0 +1,36 @@
+div {
+    color: white;
+}
+.navbar {
+    margin: 20px;
+}
+.nav-item {
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.nav-item::before {
+    display: inline-block;
+    margin-right: 10px;
+    content: ' ';
+    color: mediumpurple;
+    width: 0;
+    height: 10px;
+    background-color: mediumpurple;
+    transition: width 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+    color: mediumpurple;
+}
+
+.nav-item:hover::before {
+    width: 10px;
+}
+
+
+.nav-item.active {
+    color: mediumpurple;
+    font-weight: bold;
+}

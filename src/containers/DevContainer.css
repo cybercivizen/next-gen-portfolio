@@ -1,0 +1,36 @@
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.scroll {
+    position: absolute;
+    right: 0;
+    display: inline;
+    height: 100%;
+    background-color: black;
+    width: 5%;
+    transition: width 0.1s ease-in-out;
+    opacity: 0.5;
+}
+
+.scroll:hover {
+    width: 10%;
+}
+
+.scroll:not(:hover) {
+    width: 5%;
+}
